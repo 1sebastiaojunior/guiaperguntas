@@ -2,7 +2,7 @@ const Sequelize = require("sequelize");
 const connection = require("./database");
 
 const Resposta = connection.define("respostas", {
-    body: {
+    corpo: {
         type: Sequelize.TEXT,
         allowNull: false
     },
