@@ -41,8 +41,7 @@ app.post("/salvarpergunta",(req, res) => {
     var description = req.body.description;
 
     if(!title && !description) {
-        console.log("sadklmsad")
-        return res.send("Não deu certo o role");
+        res.send("Não deu certo o role");
     }
 
     Pergunta.create({
